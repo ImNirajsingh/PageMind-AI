@@ -104,7 +104,6 @@ The Code:
 
 Python
 from langchain_community.document_loaders import WebBaseLoader
-data = WebBaseLoader("[https://www.apple.com/in/macbook-pro/](https://www.apple.com/in/macbook-pro/)")
 docs = data.load()
 How it Works: This directly scrapes the HTML from a provided URL, cleans it into raw text, and stores it as a LangChain Document object ready to be chunked and vectorized.
 
