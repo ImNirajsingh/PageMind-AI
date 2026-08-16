@@ -1,0 +1,339 @@
+===========================================================
+                CORRELATION vs COVARIANCE
+            Notes for RAG Practice Project
+===========================================================
+
+1. INTRODUCTION
+-----------------------------------------------------------
+Correlation and Covariance are statistical measures used
+to determine the relationship between two variables.
+
+Example:
+X = Study Hours
+Y = Exam Marks
+
+If students who study more generally score higher marks,
+then X and Y have a positive relationship.
+
+-----------------------------------------------------------
+2. COVARIANCE
+-----------------------------------------------------------
+
+Definition:
+Covariance measures whether two variables move together.
+
+• Positive Covariance:
+  Both variables increase together.
+
+• Negative Covariance:
+  One variable increases while the other decreases.
+
+• Zero Covariance:
+  No linear relationship.
+
+Formula:
+
+              Σ[(Xi - X̄)(Yi - Ȳ)]
+Cov(X,Y) = ------------------------
+                  n - 1
+
+Where:
+
+Xi = Individual value of X
+Yi = Individual value of Y
+X̄ = Mean of X
+Ȳ = Mean of Y
+n = Number of observations
+
+Interpretation:
+
+Covariance > 0
+    Positive relationship
+
+Covariance < 0
+    Negative relationship
+
+Covariance = 0
+    No linear relationship
+
+Advantages:
+✔ Indicates direction of relationship.
+✔ Simple mathematical concept.
+
+Disadvantages:
+✘ Magnitude depends on units.
+✘ Difficult to compare different datasets.
+
+Example:
+
+Height (cm)
+150 160 170 180
+
+Weight (kg)
+50 60 70 80
+
+Covariance = Positive
+
+-----------------------------------------------------------
+3. CORRELATION
+-----------------------------------------------------------
+
+Definition:
+Correlation measures both the strength and direction
+of the relationship between two variables.
+
+Unlike covariance, correlation is standardized.
+
+Formula (Pearson Correlation):
+
+                 Cov(X,Y)
+r = --------------------------------
+      σX × σY
+
+Where:
+
+r = Correlation coefficient
+σX = Standard deviation of X
+σY = Standard deviation of Y
+
+Range:
+
+-1 ≤ r ≤ +1
+
+Interpretation:
+
+r = +1
+Perfect positive relationship
+
+r = +0.8
+Strong positive relationship
+
+r = +0.5
+Moderate positive relationship
+
+r = 0
+No linear relationship
+
+r = -0.5
+Moderate negative relationship
+
+r = -0.8
+Strong negative relationship
+
+r = -1
+Perfect negative relationship
+
+Example:
+
+Advertising ↑
+Sales ↑
+
+Correlation = +0.92
+
+Example:
+
+Exercise ↑
+Body Fat ↓
+
+Correlation = -0.85
+
+-----------------------------------------------------------
+4. DIFFERENCE BETWEEN CORRELATION & COVARIANCE
+-----------------------------------------------------------
+
+Feature                  Covariance              Correlation
+---------------------------------------------------------------
+Purpose                  Direction               Direction + Strength
+Range                    No fixed range          -1 to +1
+Units                    Depends on units        Unitless
+Interpretation           Difficult               Easy
+Comparison               Not suitable            Suitable
+Standardized             No                      Yes
+Magnitude                Meaningless             Meaningful
+
+-----------------------------------------------------------
+5. TYPES OF CORRELATION
+-----------------------------------------------------------
+
+1. Positive Correlation
+
+X ↑ → Y ↑
+
+Example:
+Income ↑
+Savings ↑
+
+r > 0
+
+---------------------------------------
+
+2. Negative Correlation
+
+X ↑ → Y ↓
+
+Example:
+Price ↑
+Demand ↓
+
+r < 0
+
+---------------------------------------
+
+3. Zero Correlation
+
+No relationship
+
+Example:
+Shoe Size
+IQ
+
+r ≈ 0
+
+-----------------------------------------------------------
+6. PEARSON CORRELATION ASSUMPTIONS
+-----------------------------------------------------------
+
+• Variables are continuous.
+• Linear relationship exists.
+• No significant outliers.
+• Data approximately normally distributed.
+• Independent observations.
+
+-----------------------------------------------------------
+7. COVARIANCE MATRIX
+-----------------------------------------------------------
+
+A covariance matrix contains covariance values for every
+pair of variables.
+
+Example:
+
+           Height   Weight   Age
+
+Height      25        18       6
+Weight      18        36       5
+Age          6         5      16
+
+Diagonal values represent variances.
+
+Used in:
+• PCA
+• Finance
+• Machine Learning
+• Statistics
+
+-----------------------------------------------------------
+8. CORRELATION MATRIX
+-----------------------------------------------------------
+
+A correlation matrix stores Pearson correlations among
+variables.
+
+Example:
+
+          Height Weight Age
+
+Height      1.00   0.82  0.41
+Weight      0.82   1.00  0.35
+Age         0.41   0.35  1.00
+
+Diagonal is always 1.
+
+Used in:
+• Feature Selection
+• Multicollinearity Detection
+• EDA
+• Data Analysis
+
+-----------------------------------------------------------
+9. APPLICATIONS
+-----------------------------------------------------------
+
+Covariance:
+
+• Portfolio Management
+• PCA
+• Statistics
+• Finance
+• Risk Analysis
+
+Correlation:
+
+• Machine Learning
+• Feature Selection
+• Data Science
+• Economics
+• Healthcare
+• Marketing Analytics
+
+-----------------------------------------------------------
+10. MACHINE LEARNING USES
+-----------------------------------------------------------
+
+Correlation is commonly used for:
+
+✔ Removing highly correlated features
+✔ Detecting multicollinearity
+✔ Exploratory Data Analysis (EDA)
+✔ Feature Engineering
+✔ Data Visualization
+
+Covariance is used for:
+
+✔ Principal Component Analysis (PCA)
+✔ Gaussian Distribution
+✔ Covariance Matrix
+✔ Multivariate Statistics
+
+-----------------------------------------------------------
+11. EXAMPLE
+-----------------------------------------------------------
+
+Hours Studied
+
+2
+4
+6
+8
+10
+
+Marks
+
+40
+55
+70
+82
+95
+
+Result:
+
+Covariance = Positive
+
+Correlation ≈ +0.99
+
+Meaning:
+Students who study more tend to score higher marks.
+
+-----------------------------------------------------------
+12. KEY POINTS TO REMEMBER
+-----------------------------------------------------------
+
+✔ Covariance tells only the direction.
+
+✔ Correlation tells both direction and strength.
+
+✔ Correlation is normalized.
+
+✔ Correlation values always lie between -1 and +1.
+
+✔ Covariance has no fixed range.
+
+✔ Correlation is easier to interpret.
+
+✔ Correlation is widely used in Machine Learning.
+
+✔ Covariance is heavily used in PCA and Statistics.
+
+===========================================================
+                END OF NOTES
+===========================================================
