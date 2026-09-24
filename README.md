@@ -1,4 +1,4 @@
-# 📚 PageMind AI — Comprehensive RAG System & Document Assistant
+# PageMind AI — Comprehensive RAG System & Document Assistant
 
 **PageMind AI** is a Retrieval-Augmented Generation (RAG) system that allows users to upload documents and ask natural-language questions about their content.
 
@@ -19,7 +19,7 @@ This project demonstrates several important concepts in the **LangChain + RAG ec
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 Traditional LLM applications rely only on the knowledge contained in the model's training data.
 
@@ -45,7 +45,7 @@ The system searches the document for relevant sections and generates an answer b
 
 ---
 
-# 🏗️ Project Structure
+# Project Structure
 
 ```text
 PageMind-AI/
@@ -77,7 +77,7 @@ PageMind-AI/
 
 ---
 
-# 🧩 Core Modules
+# Core Modules
 
 ## 1. Main Web Application — `app.py`
 
@@ -96,7 +96,7 @@ The application allows the user to:
 
 ---
 
-## 🔹 Embedding Model
+## Embedding Model
 
 The application uses Hugging Face embeddings:
 
@@ -128,7 +128,7 @@ even when the wording is different.
 
 ---
 
-# 📄 Document Processing
+# Document Processing
 
 After a PDF is uploaded, the system loads it using `PyPDFLoader`.
 
@@ -166,7 +166,7 @@ This reduces the possibility of losing context when important information falls 
 
 ---
 
-# 🔎 Retrieval System
+# Retrieval System
 
 PageMind AI uses retrieval techniques to find the most relevant parts of a document.
 
@@ -193,7 +193,7 @@ retriever = vectorstore.as_retriever(
 
 ---
 
-# 🤖 LLM Integration
+# LLM Integration
 
 The retrieved context is passed to an LLM such as Mistral:
 
@@ -211,7 +211,7 @@ This helps reduce the chance of answering from unrelated information.
 
 ---
 
-# 🧠 Advanced Retrievers
+# Advanced Retrievers
 
 ## 2. Multi-Query Retrieval — `retrievers/multiquery.py`
 
@@ -262,7 +262,7 @@ This can improve recall when the wording of the question does not match the word
 
 ---
 
-# 🔄 MMR vs Similarity Search — `retrievers/mmr.py`
+# MMR vs Similarity Search — `retrievers/mmr.py`
 
 The project also demonstrates the difference between standard similarity search and Maximum Marginal Relevance.
 
@@ -311,7 +311,7 @@ This can provide the LLM with broader context.
 
 ---
 
-# 🌐 Document Ingestion
+# Document Ingestion
 
 ## 3. Web Page Loader — `document loaders/pages.py`
 
@@ -343,7 +343,7 @@ Retrieved
 
 ---
 
-# 📑 PDF Loader — `document loaders/pdf.py`
+# PDF Loader — `document loaders/pdf.py`
 
 The PDF loader demonstrates how PDF documents can be loaded and split into smaller chunks.
 
@@ -363,7 +363,7 @@ This example intentionally uses smaller chunks to demonstrate how chunk size aff
 
 ---
 
-# 🗄️ Vector Store — `Vector Store/DB.py`
+# Vector Store — `Vector Store/DB.py`
 
 The project also demonstrates creating a vector database using ChromaDB.
 
@@ -399,7 +399,7 @@ The vector database allows semantic search over the stored document chunks.
 
 ---
 
-# 🔁 Complete RAG Pipeline
+# Complete RAG Pipeline
 
 The complete PageMind AI pipeline can be summarized as:
 
@@ -482,7 +482,7 @@ source .venv/bin/activate
 
 ---
 
-# 📦 Install Dependencies
+# Install Dependencies
 
 Install the required Python packages:
 
@@ -492,7 +492,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🔐 Environment Variables
+# Environment Variables
 
 Create a `.env` file in the project root.
 
@@ -506,13 +506,13 @@ GOOGLE_API_KEY=your_google_api_key
 
 Depending on the modules you use, additional API credentials may be required.
 
-> ⚠️ **Never commit your `.env` file or expose API keys publicly.**
+>  **Never commit your `.env` file or expose API keys publicly.**
 
 The `.env` file is intentionally excluded through `.gitignore`.
 
 ---
 
-# ▶️ Run the Application
+# Run the Application
 
 Make sure your virtual environment is activated.
 
@@ -532,7 +532,7 @@ Open the URL in your browser.
 
 ---
 
-# 💻 Using PageMind AI
+# Using PageMind AI
 
 ### Step 1 — Upload a PDF
 
@@ -572,7 +572,7 @@ The LLM uses the retrieved context to produce the response.
 
 ---
 
-# ⚠️ Troubleshooting
+# Troubleshooting
 
 ## `ModuleNotFoundError: No module named 'torchvision'`
 
@@ -611,7 +611,7 @@ Use this workaround only when your environment actually has the relevant SQLite 
 
 ---
 
-# 🛡️ Git & Security
+# Git & Security
 
 The following files and directories are intentionally ignored:
 
@@ -633,7 +633,7 @@ This prevents:
 
 ---
 
-# 🧪 Technologies Used
+# Technologies Used
 
 | Technology                | Purpose                         |
 | ------------------------- | ------------------------------- |
@@ -650,7 +650,7 @@ This prevents:
 
 ---
 
-# 📈 Future Improvements
+# Future Improvements
 
 Possible future enhancements for PageMind AI include:
 
@@ -670,7 +670,7 @@ Possible future enhancements for PageMind AI include:
 
 ---
 
-# 🎓 Learning Goals
+# Learning Goals
 
 This project is designed to provide practical experience with:
 
@@ -686,7 +686,7 @@ This project is designed to provide practical experience with:
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Niraj Singh**
 
@@ -703,7 +703,7 @@ Data Science
 
 ---
 
-# ⭐ Support the Project
+# Support the Project
 
 If you find this project useful, consider giving the repository a ⭐ on GitHub.
 
