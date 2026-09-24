@@ -1,4 +1,4 @@
-# PageMind AI — Comprehensive RAG System & Document Assistant
+# PageMind AI : Comprehensive RAG System & Document Assistant
 
 **PageMind AI** is a Retrieval-Augmented Generation (RAG) system that allows users to upload documents and ask natural-language questions about their content.
 
